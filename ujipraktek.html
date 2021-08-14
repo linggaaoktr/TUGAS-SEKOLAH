@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    
+    <script>
+        var pengirim = prompt("Nama Pengirim")
+        var penerima = prompt("Nama Penerima")
+        var jarak = prompt("Jarak Pengiriman(km)")
+        var alamat = prompt("Alamat Penerima")
+        var jenis = prompt("Jenis Barang")
+        var berat = prompt("Berat Barang(kg)")
+        var biaya_jarak = jarak*10000
+        var biaya_berat = berat*5000
+        var total1 = biaya_jarak+biaya_berat
+       
+        document.write("<b>Nama Pengirim</b> =" , pengirim , "<br>")
+        document.write("<b>Nama Penerima</b> =", penerima , "<br>")
+        document.write("<b>Jarak Pengiriman(km)</b> =", jarak , "<br>")
+        document.write("<b>Alamat Penerima</b> =" , alamat , "<br>")
+        document.write("<b>Jenis Barang</b> =" , jenis , "<br>")
+        document.write("<b>Berat Barang(kg)</b> =" , berat , "<br>")
+        document.write ("<b>Biaya Pengiriman</b> = " , biaya_jarak , "<br>")
+        document.write("<b>Biaya Berat Barang</b> = " , biaya_berat , "<br>")
+        document.write("<b>Total Biay</b>a =" , total1 , "<br>")
+
+        var diskon1
+        if (biaya_jarak >= 50000) {
+            diskon1 = biaya_jarak*10/100
+        }else {
+            diskon1 = 0
+        }
+        var diskon2
+        if(biaya_berat >= 100000){
+            diskon2 = biaya_berat*5/100
+        }else {
+            diskon2 = 0
+        }
+        var total2 = diskon1 + diskon2
+        var total3 = total1 - total2
+        document.write("<b>Harga Diskon Jarak</b> =", diskon1 , "<br>")
+        document.write("<b>Harga Diskon Berat</b> =" , diskon2 , "<br>")
+        document.write("<b>Total Diskon</b> =",total2 , "<br>")
+        document.write("<b>Total Pembayaran</b> =" , total3, "<br>")
+        
+       
+        
+        
+</script>
+</body>
+</html>
