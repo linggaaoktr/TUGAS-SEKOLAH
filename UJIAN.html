@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+    
+
+    function persegi(s1 , s2){
+            var luas = s1*s2
+            return luas;
+    }
+        function persegi_panjang(p, l) {
+            var luas = p*l
+            return luas;
+    }
+        function segitiga(a, t, b) {
+            var luas = a*t*b
+            return luas;
+    }
+        function jajargenjang(a, t) {
+            var luas = a*t
+            return luas;
+        }
+
+var pilih = prompt('Ketik Disini: persegi, persegi panjang, segitiga, jajargenjang')
+
+        if(pilih === "persegi"){
+            var s1 = prompt("masukan sisi1")
+            var s2 = prompt ("masukan sisi2")
+            var hasil = s1*s2
+            document.write("Hasilnya Adalah s1*s2 =")
+            document.write(hasil)
+        }else if(pilih === "persegi panjang"){
+            var p = prompt("masukan panjang")
+            var l = prompt("masukan lebar")
+            var hasil = p*l
+            document.write("Hasilnya Adalah p*l =")
+            document.write(hasil)
+        }else if(pilih === "segitiga"){
+            var a = prompt("masukan alas")
+            var t = prompt("masukan tinggi")
+            var b = 1/2
+            var hasil= a*t*b
+            document.write("Hasilnya Adalah a*t*b =")
+            document.write(hasil)
+           }else if(pilih === "jajargenjang"){
+            var a = prompt("masukan alas")
+            var t = prompt("masukan tinggi")
+            var hasil = a*t
+           document.write("Hasilnya Adalah a*t =")
+           document.write(hasil)
+        }
+       
+
+    
+    </script>
+</body>
+</html>
